@@ -3,34 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SpreadsheetPortal | Advanced Excel & Business Software Solutions</title>
+    <title>SpreadsheetPortal | Excel Automation & Business Intelligence Solutions</title>
+    <meta name="description" content="Professional Excel automation, data analysis, and custom business software solutions. Transform your data into actionable insights with our expert consultation services.">
+    <meta name="keywords" content="excel automation, data analysis, business software, retail solutions, data consultation, spreadsheet experts">
+    <meta name="author" content="SpreadsheetPortal">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="SpreadsheetPortal | Excel Automation & Business Intelligence">
+    <meta property="og:description" content="Professional Excel automation, data analysis, and custom business software solutions.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://spreadsheetportal.com">
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "SpreadsheetPortal",
+      "description": "Advanced Microsoft Excel and data analysis services with custom retail business software solutions",
+      "url": "https://spreadsheetportal.com",
+      "logo": "https://spreadsheetportal.com/logo.png",
+      "areaServed": "Worldwide",
+      "serviceType": "Business Consultation, Data Analysis, Software Development",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Business Solutions",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Excel Automation",
+              "description": "Custom macros, VBA automation, and interactive dashboards"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Data Analysis",
+              "description": "Business intelligence, predictive analytics, and KPI tracking"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Retail Business Software",
+              "description": "Custom inventory management, POS integration, and CRM solutions"
+            }
+          }
+        ]
+      }
+    }
+    </script>
+    
+    <!-- CSS and Fonts -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        primary: '#2563eb',
-                        secondary: '#1e40af',
-                        accent: '#3b82f6',
-                        dark: '#1f2937',
-                        light: '#f8fafc'
+                        primary: '#0F4C81',     // Professional navy blue
+                        secondary: '#2E8B57',   // Professional sea green
+                        accent: '#FF6B35',      // Professional coral accent
+                        dark: '#1a202c',
+                        light: '#f7fafc',
+                        neutral: '#4a5568'
                     },
                     fontFamily: {
                         'inter': ['Inter', 'sans-serif'],
+                        'playfair': ['Playfair Display', 'serif'],
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.8s ease-in-out',
+                        'slide-up': 'slideUp 0.8s ease-out',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(20px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' },
+                        }
                     }
                 }
             }
         }
     </script>
+    
     <style>
-        .gradient-bg {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        }
         .hero-gradient {
-            background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+            background: linear-gradient(135deg, rgba(15, 76, 129, 0.9) 0%, rgba(46, 139, 87, 0.85) 100%);
         }
         .card-hover {
             transition: all 0.3s ease;
@@ -39,32 +109,44 @@
             transform: translateY(-5px);
             box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
         }
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent 0%, #e2e8f0 50%, transparent 100%);
+        }
         .stats-counter {
             font-feature-settings: 'tnum';
             font-variant-numeric: tabular-nums;
+        }
+        .logo-text {
+            font-family: 'Playfair Display', serif;
+        }
+        .hero-image-overlay {
+            background: linear-gradient(90deg, rgba(15, 76, 129, 0.85) 0%, rgba(15, 76, 129, 0.7) 100%);
         }
     </style>
 </head>
 <body class="font-inter bg-gray-50">
     <!-- Navigation -->
-    <nav class="bg-white shadow-lg sticky top-0 z-50">
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-20">
                 <div class="flex items-center">
                     <div class="flex-shrink-0 flex items-center">
-                        <i class="fas fa-table-cells-large text-primary text-2xl mr-3"></i>
-                        <span class="text-xl font-bold text-gray-900">SpreadsheetPortal</span>
+                        <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center mr-3">
+                            <i class="fas fa-chart-line text-white text-lg"></i>
+                        </div>
+                        <span class="logo-text text-xl font-bold text-primary">SpreadsheetPortal</span>
                     </div>
                 </div>
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="#services" class="text-gray-700 hover:text-primary font-medium transition duration-150">Services</a>
-                    <a href="#solutions" class="text-gray-700 hover:text-primary font-medium transition duration-150">Solutions</a>
-                    <a href="#case-studies" class="text-gray-700 hover:text-primary font-medium transition duration-150">Case Studies</a>
-                    <a href="#pricing" class="text-gray-700 hover:text-primary font-medium transition duration-150">Pricing</a>
+                    <a href="#services" class="text-neutral hover:text-primary font-medium transition duration-150">Services</a>
+                    <a href="#solutions" class="text-neutral hover:text-primary font-medium transition duration-150">Solutions</a>
+                    <a href="#case-studies" class="text-neutral hover:text-primary font-medium transition duration-150">Case Studies</a>
+                    <a href="#pricing" class="text-neutral hover:text-primary font-medium transition duration-150">Pricing</a>
                     <a href="#contact" class="bg-primary text-white px-6 py-2 rounded-lg font-medium hover:bg-secondary transition duration-150">Get Started</a>
                 </div>
                 <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-button" class="text-gray-700">
+                    <button id="mobile-menu-button" class="text-neutral">
                         <i class="fas fa-bars text-2xl"></i>
                     </button>
                 </div>
@@ -73,28 +155,36 @@
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
             <div class="px-2 pt-2 pb-3 space-y-1">
-                <a href="#services" class="block px-3 py-2 text-gray-700 hover:text-primary">Services</a>
-                <a href="#solutions" class="block px-3 py-2 text-gray-700 hover:text-primary">Solutions</a>
-                <a href="#case-studies" class="block px-3 py-2 text-gray-700 hover:text-primary">Case Studies</a>
-                <a href="#pricing" class="block px-3 py-2 text-gray-700 hover:text-primary">Pricing</a>
+                <a href="#services" class="block px-3 py-2 text-neutral hover:text-primary">Services</a>
+                <a href="#solutions" class="block px-3 py-2 text-neutral hover:text-primary">Solutions</a>
+                <a href="#case-studies" class="block px-3 py-2 text-neutral hover:text-primary">Case Studies</a>
+                <a href="#pricing" class="block px-3 py-2 text-neutral hover:text-primary">Pricing</a>
                 <a href="#contact" class="block px-3 py-2 bg-primary text-white rounded mx-3 text-center">Get Started</a>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-gradient text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+    <section class="relative bg-gray-800 overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                 alt="Business data analysis and consultation" 
+                 class="w-full h-full object-cover">
+            <div class="absolute inset-0 hero-image-overlay"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div>
-                    <h1 class="text-5xl font-bold leading-tight mb-6">
-                        Transform Your Business Data Into Competitive Advantage
+                <div class="text-white animate-fade-in">
+                    <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6 font-playfair">
+                        Transform Your Business Data Into <span class="text-accent">Competitive Advantage</span>
                     </h1>
                     <p class="text-xl text-blue-100 mb-8 leading-relaxed">
                         Advanced Excel automation, powerful data analysis, and custom retail software solutions that drive efficiency, insights, and growth for your business.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="#contact" class="bg-white text-primary px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition duration-150 text-center">
+                        <a href="#contact" class="bg-accent text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-orange-500 transition duration-150 text-center shadow-lg">
                             Start Your Project
                         </a>
                         <a href="#case-studies" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:bg-opacity-10 transition duration-150 text-center">
@@ -116,8 +206,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="relative">
-                    <div class="bg-white rounded-2xl shadow-2xl p-8 transform rotate-3">
+                <div class="relative animate-slide-up">
+                    <div class="bg-white rounded-2xl shadow-2xl p-8 transform rotate-1">
                         <div class="bg-gray-800 rounded-lg p-4">
                             <div class="flex space-x-2 mb-4">
                                 <div class="w-3 h-3 bg-red-500 rounded-full"></div>
@@ -138,7 +228,7 @@
                         <div class="font-semibold">AI-Powered</div>
                         <div class="text-sm">Insights</div>
                     </div>
-                    <div class="absolute -top-6 -right-6 bg-green-500 text-white p-6 rounded-2xl shadow-xl transform rotate-6">
+                    <div class="absolute -top-6 -right-6 bg-secondary text-white p-6 rounded-2xl shadow-xl transform rotate-6">
                         <i class="fas fa-chart-line text-3xl mb-2"></i>
                         <div class="font-semibold">Real-Time</div>
                         <div class="text-sm">Analytics</div>
@@ -148,12 +238,26 @@
         </div>
     </section>
 
+    <!-- Trust Bar -->
+    <section class="py-8 bg-white border-b">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center text-neutral mb-4 font-medium">Trusted by industry leaders</div>
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-8 items-center opacity-70">
+                <div class="text-center text-xl font-bold text-primary">Microsoft</div>
+                <div class="text-center text-xl font-bold text-primary">Forbes</div>
+                <div class="text-center text-xl font-bold text-primary">Shopify</div>
+                <div class="text-center text-xl font-bold text-primary">HubSpot</div>
+                <div class="text-center text-xl font-bold text-primary">Salesforce</div>
+            </div>
+        </div>
+    </section>
+
     <!-- Services Section -->
     <section id="services" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">Our Core Services</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                <h2 class="text-4xl font-bold text-dark mb-4 font-playfair">Our Core Services</h2>
+                <p class="text-xl text-neutral max-w-3xl mx-auto">
                     Comprehensive data and software solutions designed to solve your most pressing business challenges
                 </p>
             </div>
@@ -164,8 +268,8 @@
                     <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6">
                         <i class="fas fa-file-excel text-primary text-2xl"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Advanced Excel Solutions</h3>
-                    <p class="text-gray-600 mb-6">
+                    <h3 class="text-2xl font-bold text-dark mb-4">Advanced Excel Solutions</h3>
+                    <p class="text-neutral mb-6">
                         Transform your spreadsheets from static documents into dynamic, automated business intelligence tools that drive decision-making.
                     </p>
                     <ul class="space-y-3 mb-6">
@@ -194,10 +298,10 @@
                 <!-- Service 2 -->
                 <div class="bg-light rounded-2xl p-8 card-hover border border-gray-200">
                     <div class="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mb-6">
-                        <i class="fas fa-chart-bar text-purple-600 text-2xl"></i>
+                        <i class="fas fa-chart-bar text-secondary text-2xl"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Data Analysis & BI</h3>
-                    <p class="text-gray-600 mb-6">
+                    <h3 class="text-2xl font-bold text-dark mb-4">Data Analysis & BI</h3>
+                    <p class="text-neutral mb-6">
                         Uncover hidden patterns, predict trends, and make data-driven decisions with our comprehensive analytics services.
                     </p>
                     <ul class="space-y-3 mb-6">
@@ -226,10 +330,10 @@
                 <!-- Service 3 -->
                 <div class="bg-light rounded-2xl p-8 card-hover border border-gray-200">
                     <div class="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center mb-6">
-                        <i class="fas fa-cash-register text-green-600 text-2xl"></i>
+                        <i class="fas fa-cash-register text-accent text-2xl"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Retail Business Software</h3>
-                    <p class="text-gray-600 mb-6">
+                    <h3 class="text-2xl font-bold text-dark mb-4">Retail Business Software</h3>
+                    <p class="text-neutral mb-6">
                         Custom-built software solutions designed specifically for retail businesses to streamline operations and boost profitability.
                     </p>
                     <ul class="space-y-3 mb-6">
@@ -262,7 +366,7 @@
     <section id="solutions" class="py-20 bg-gray-900 text-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold mb-4">Industry-Specific Solutions</h2>
+                <h2 class="text-4xl font-bold mb-4 font-playfair">Industry-Specific Solutions</h2>
                 <p class="text-xl text-gray-300 max-w-3xl mx-auto">
                     Tailored approaches for different business verticals and their unique challenges
                 </p>
@@ -339,8 +443,8 @@
     <section id="case-studies" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">Success Stories</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                <h2 class="text-4xl font-bold text-dark mb-4 font-playfair">Success Stories</h2>
+                <p class="text-xl text-neutral max-w-3xl mx-auto">
                     Real results from businesses that transformed their operations with our solutions
                 </p>
             </div>
@@ -348,18 +452,18 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Case Study 1 -->
                 <div class="bg-light rounded-2xl overflow-hidden card-hover">
-                    <div class="h-48 bg-gradient-to-r from-blue-500 to-purple-600 relative">
+                    <div class="h-48 bg-gradient-to-r from-primary to-secondary relative">
                         <div class="absolute bottom-4 left-4 bg-white text-primary px-3 py-1 rounded-full text-sm font-semibold">
                             Retail
                         </div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-900 mb-2">Fashion Retail Chain</h3>
-                        <p class="text-gray-600 mb-4">
+                        <h3 class="text-xl font-bold text-dark mb-2">Fashion Retail Chain</h3>
+                        <p class="text-neutral mb-4">
                             Implemented inventory management system across 15 locations, reducing stockouts by 78%.
                         </p>
                         <div class="flex justify-between items-center">
-                            <div class="text-sm text-gray-500">Results:</div>
+                            <div class="text-sm text-neutral">Results:</div>
                             <div class="text-primary font-semibold">+45% Efficiency</div>
                         </div>
                     </div>
@@ -367,18 +471,18 @@
 
                 <!-- Case Study 2 -->
                 <div class="bg-light rounded-2xl overflow-hidden card-hover">
-                    <div class="h-48 bg-gradient-to-r from-green-500 to-blue-600 relative">
-                        <div class="absolute bottom-4 left-4 bg-white text-green-600 px-3 py-1 rounded-full text-sm font-semibold">
+                    <div class="h-48 bg-gradient-to-r from-secondary to-accent relative">
+                        <div class="absolute bottom-4 left-4 bg-white text-secondary px-3 py-1 rounded-full text-sm font-semibold">
                             Manufacturing
                         </div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-900 mb-2">Auto Parts Manufacturer</h3>
-                        <p class="text-gray-600 mb-4">
+                        <h3 class="text-xl font-bold text-dark mb-2">Auto Parts Manufacturer</h3>
+                        <p class="text-neutral mb-4">
                             Developed custom production tracking dashboard that reduced reporting time by 12 hours weekly.
                         </p>
                         <div class="flex justify-between items-center">
-                            <div class="text-sm text-gray-500">Results:</div>
+                            <div class="text-sm text-neutral">Results:</div>
                             <div class="text-primary font-semibold">-62% Time Saved</div>
                         </div>
                     </div>
@@ -386,18 +490,18 @@
 
                 <!-- Case Study 3 -->
                 <div class="bg-light rounded-2xl overflow-hidden card-hover">
-                    <div class="h-48 bg-gradient-to-r from-purple-500 to-pink-600 relative">
-                        <div class="absolute bottom-4 left-4 bg-white text-purple-600 px-3 py-1 rounded-full text-sm font-semibold">
+                    <div class="h-48 bg-gradient-to-r from-accent to-primary relative">
+                        <div class="absolute bottom-4 left-4 bg-white text-accent px-3 py-1 rounded-full text-sm font-semibold">
                             E-commerce
                         </div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-900 mb-2">Online Electronics Store</h3>
-                        <p class="text-gray-600 mb-4">
+                        <h3 class="text-xl font-bold text-dark mb-2">Online Electronics Store</h3>
+                        <p class="text-neutral mb-4">
                             Created integrated analytics platform combining sales, inventory, and customer data.
                         </p>
                         <div class="flex justify-between items-center">
-                            <div class="text-sm text-gray-500">Results:</div>
+                            <div class="text-sm text-neutral">Results:</div>
                             <div class="text-primary font-semibold">+29% Revenue</div>
                         </div>
                     </div>
@@ -410,8 +514,8 @@
     <section id="pricing" class="py-20 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">Flexible Pricing Options</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                <h2 class="text-4xl font-bold text-dark mb-4 font-playfair">Flexible Pricing Options</h2>
+                <p class="text-xl text-neutral max-w-3xl mx-auto">
                     Choose the plan that works for your business needs and budget
                 </p>
             </div>
@@ -420,9 +524,9 @@
                 <!-- Plan 1 -->
                 <div class="bg-white rounded-2xl p-8 border border-gray-200 card-hover">
                     <div class="text-center mb-8">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Starter</h3>
-                        <div class="text-4xl font-bold text-gray-900 mb-2">$997</div>
-                        <div class="text-gray-600">One-time project</div>
+                        <h3 class="text-2xl font-bold text-dark mb-2">Starter</h3>
+                        <div class="text-4xl font-bold text-dark mb-2">$997</div>
+                        <div class="text-neutral">One-time project</div>
                     </div>
                     <ul class="space-y-4 mb-8">
                         <li class="flex items-center">
@@ -446,7 +550,7 @@
                             <span>Custom Software</span>
                         </li>
                     </ul>
-                    <a href="#contact" class="block w-full bg-gray-100 text-gray-800 text-center py-3 rounded-lg font-semibold hover:bg-gray-200 transition duration-150">
+                    <a href="#contact" class="block w-full bg-gray-100 text-dark text-center py-3 rounded-lg font-semibold hover:bg-gray-200 transition duration-150">
                         Get Started
                     </a>
                 </div>
@@ -457,9 +561,9 @@
                         Most Popular
                     </div>
                     <div class="text-center mb-8">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Business</h3>
-                        <div class="text-4xl font-bold text-gray-900 mb-2">$2,497</div>
-                        <div class="text-gray-600">Comprehensive package</div>
+                        <h3 class="text-2xl font-bold text-dark mb-2">Business</h3>
+                        <div class="text-4xl font-bold text-dark mb-2">$2,497</div>
+                        <div class="text-neutral">Comprehensive package</div>
                     </div>
                     <ul class="space-y-4 mb-8">
                         <li class="flex items-center">
@@ -491,9 +595,9 @@
                 <!-- Plan 3 -->
                 <div class="bg-white rounded-2xl p-8 border border-gray-200 card-hover">
                     <div class="text-center mb-8">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Enterprise</h3>
-                        <div class="text-4xl font-bold text-gray-900 mb-2">Custom</div>
-                        <div class="text-gray-600">Tailored solution</div>
+                        <h3 class="text-2xl font-bold text-dark mb-2">Enterprise</h3>
+                        <div class="text-4xl font-bold text-dark mb-2">Custom</div>
+                        <div class="text-neutral">Tailored solution</div>
                     </div>
                     <ul class="space-y-4 mb-8">
                         <li class="flex items-center">
@@ -517,7 +621,7 @@
                             <span>Training & Documentation</span>
                         </li>
                     </ul>
-                    <a href="#contact" class="block w-full bg-gray-100 text-gray-800 text-center py-3 rounded-lg font-semibold hover:bg-gray-200 transition duration-150">
+                    <a href="#contact" class="block w-full bg-gray-100 text-dark text-center py-3 rounded-lg font-semibold hover:bg-gray-200 transition duration-150">
                         Contact Sales
                     </a>
                 </div>
@@ -530,8 +634,8 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
                 <div>
-                    <h2 class="text-4xl font-bold text-gray-900 mb-6">Ready to Transform Your Business?</h2>
-                    <p class="text-xl text-gray-600 mb-8">
+                    <h2 class="text-4xl font-bold text-dark mb-6 font-playfair">Ready to Transform Your Business?</h2>
+                    <p class="text-xl text-neutral mb-8">
                         Let's discuss your project and how we can help you achieve your business goals with data-driven solutions.
                     </p>
                     <div class="space-y-6">
@@ -541,7 +645,7 @@
                             </div>
                             <div>
                                 <h4 class="font-semibold text-lg mb-1">Quick Response</h4>
-                                <p class="text-gray-600">We typically respond within 2 hours during business days</p>
+                                <p class="text-neutral">We typically respond within 2 hours during business days</p>
                             </div>
                         </div>
                         <div class="flex items-start">
@@ -550,7 +654,7 @@
                             </div>
                             <div>
                                 <h4 class="font-semibold text-lg mb-1">Free Consultation</h4>
-                                <p class="text-gray-600">30-minute discovery call to understand your needs</p>
+                                <p class="text-neutral">30-minute discovery call to understand your needs</p>
                             </div>
                         </div>
                         <div class="flex items-start">
@@ -559,7 +663,7 @@
                             </div>
                             <div>
                                 <h4 class="font-semibold text-lg mb-1">Detailed Proposal</h4>
-                                <p class="text-gray-600">Custom solution outline with timeline and pricing</p>
+                                <p class="text-neutral">Custom solution outline with timeline and pricing</p>
                             </div>
                         </div>
                     </div>
@@ -567,19 +671,19 @@
                 <div class="bg-light rounded-2xl p-8">
                     <form id="contact-form" class="space-y-6">
                         <div>
-                            <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Full Name</label>
+                            <label for="name" class="block text-sm font-medium text-neutral mb-2">Full Name</label>
                             <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition duration-150">
                         </div>
                         <div>
-                            <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
+                            <label for="email" class="block text-sm font-medium text-neutral mb-2">Email Address</label>
                             <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition duration-150">
                         </div>
                         <div>
-                            <label for="company" class="block text-sm font-medium text-gray-700 mb-2">Company</label>
+                            <label for="company" class="block text-sm font-medium text-neutral mb-2">Company</label>
                             <input type="text" id="company" name="company" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition duration-150">
                         </div>
                         <div>
-                            <label for="service" class="block text-sm font-medium text-gray-700 mb-2">Service Interest</label>
+                            <label for="service" class="block text-sm font-medium text-neutral mb-2">Service Interest</label>
                             <select id="service" name="service" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition duration-150">
                                 <option value="">Select a service</option>
                                 <option value="excel">Excel Automation</option>
@@ -590,7 +694,7 @@
                             </select>
                         </div>
                         <div>
-                            <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Project Details</label>
+                            <label for="message" class="block text-sm font-medium text-neutral mb-2">Project Details</label>
                             <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition duration-150" placeholder="Tell us about your project and what you're hoping to achieve..."></textarea>
                         </div>
                         <button type="submit" class="w-full bg-primary text-white py-4 rounded-lg font-semibold hover:bg-secondary transition duration-150">
@@ -602,14 +706,47 @@
         </div>
     </section>
 
+    <!-- FAQ Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-dark mb-4 font-playfair">Frequently Asked Questions</h2>
+                <p class="text-xl text-neutral max-w-3xl mx-auto">
+                    Common questions about our services and process
+                </p>
+            </div>
+            
+            <div class="space-y-6">
+                <div class="bg-white rounded-2xl p-6 shadow-sm">
+                    <h3 class="text-xl font-semibold text-dark mb-2">How long does a typical project take?</h3>
+                    <p class="text-neutral">Project timelines vary based on complexity, but most Excel automation projects take 2-4 weeks, while custom software development typically requires 6-12 weeks.</p>
+                </div>
+                <div class="bg-white rounded-2xl p-6 shadow-sm">
+                    <h3 class="text-xl font-semibold text-dark mb-2">Do you provide training and support?</h3>
+                    <p class="text-neutral">Yes, all our projects include comprehensive documentation and training sessions. We also offer ongoing support packages to ensure your team can effectively use the solutions we build.</p>
+                </div>
+                <div class="bg-white rounded-2xl p-6 shadow-sm">
+                    <h3 class="text-xl font-semibold text-dark mb-2">What data sources can you work with?</h3>
+                    <p class="text-neutral">We can integrate with virtually any data source including Excel files, CSV, SQL databases, APIs, cloud services (Google Sheets, Airtable), and business applications like Shopify, QuickBooks, and Salesforce.</p>
+                </div>
+                <div class="bg-white rounded-2xl p-6 shadow-sm">
+                    <h3 class="text-xl font-semibold text-dark mb-2">Is my data secure with you?</h3>
+                    <p class="text-neutral">Absolutely. We follow strict data security protocols, use encrypted connections, and can sign NDAs. Your data remains confidential and is never shared with third parties.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
+    <footer class="bg-dark text-white py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div>
                     <div class="flex items-center mb-4">
-                        <i class="fas fa-table-cells-large text-primary text-2xl mr-3"></i>
-                        <span class="text-xl font-bold">SpreadsheetPortal</span>
+                        <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center mr-3">
+                            <i class="fas fa-chart-line text-white text-lg"></i>
+                        </div>
+                        <span class="logo-text text-xl font-bold text-white">SpreadsheetPortal</span>
                     </div>
                     <p class="text-gray-400">
                         Transforming business data into competitive advantage through advanced Excel solutions and custom software.
