@@ -670,38 +670,57 @@
                     </div>
                 </div>
                 <div class="bg-light rounded-2xl p-8">
-                    <form id="contact-form" class="space-y-6">
-                        <div>
-                            <label for="name" class="block text-sm font-medium text-neutral mb-2">Full Name</label>
-                            <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition duration-150">
-                        </div>
-                        <div>
-                            <label for="email" class="block text-sm font-medium text-neutral mb-2">Email Address</label>
-                            <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition duration-150">
-                        </div>
-                        <div>
-                            <label for="company" class="block text-sm font-medium text-neutral mb-2">Company</label>
-                            <input type="text" id="company" name="company" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition duration-150">
-                        </div>
-                        <div>
-                            <label for="service" class="block text-sm font-medium text-neutral mb-2">Service Interest</label>
-                            <select id="service" name="service" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition duration-150">
-                                <option value="">Select a service</option>
-                                <option value="excel">Excel Automation</option>
-                                <option value="analysis">Data Analysis</option>
-                                <option value="software">Business Software</option>
-                                <option value="multiple">Multiple Services</option>
-                                <option value="not-sure">Not Sure</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label for="message" class="block text-sm font-medium text-neutral mb-2">Project Details</label>
-                            <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition duration-150" placeholder="Tell us about your project and what you're hoping to achieve..."></textarea>
-                        </div>
-                        <button type="submit" class="w-full bg-primary text-white py-4 rounded-lg font-semibold hover:bg-secondary transition duration-150">
-                            Send Message
-                        </button>
-                    </form>
+                    <form action="https://formsubmit.co/grandnum86@gmail.com" method="POST" id="contact-form" class="space-y-6">
+    
+    <!-- Add a hidden subject field -->
+    <input type="hidden" name="_subject" value="New SpreadsheetPortal Contact Form Submission">
+    
+    <!-- Add a thank you page redirect (optional) -->
+    <input type="hidden" name="_next" value="https://spreadsheetportal.com/thank-you.html">
+    
+    <!-- Add honeypot spam protection -->
+    <input type="text" name="_honey" style="display:none">
+    
+    <!-- Add captcha (optional) -->
+    <input type="hidden" name="_captcha" value="false">
+    
+    <!-- Your existing form fields -->
+    <div>
+        <label for="name" class="block text-sm font-medium text-neutral mb-2">Full Name</label>
+        <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition duration-150">
+    </div>
+    
+    <div>
+        <label for="email" class="block text-sm font-medium text-neutral mb-2">Email Address</label>
+        <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition duration-150">
+    </div>
+    
+    <div>
+        <label for="company" class="block text-sm font-medium text-neutral mb-2">Company</label>
+        <input type="text" id="company" name="company" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition duration-150">
+    </div>
+    
+    <div>
+        <label for="service" class="block text-sm font-medium text-neutral mb-2">Service Interest</label>
+        <select id="service" name="service" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition duration-150">
+            <option value="">Select a service</option>
+            <option value="Excel Automation">Excel Automation</option>
+            <option value="Data Analysis">Data Analysis</option>
+            <option value="Business Software">Business Software</option>
+            <option value="Multiple Services">Multiple Services</option>
+            <option value="Not Sure">Not Sure</option>
+        </select>
+    </div>
+    
+    <div>
+        <label for="message" class="block text-sm font-medium text-neutral mb-2">Project Details</label>
+        <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition duration-150" placeholder="Tell us about your project and what you're hoping to achieve..."></textarea>
+    </div>
+    
+    <button type="submit" class="w-full bg-primary text-white py-4 rounded-lg font-semibold hover:bg-secondary transition duration-150">
+        Send Message
+    </button>
+</form>
                 </div>
             </div>
         </div>
@@ -881,6 +900,7 @@
     </script>
 </body>
 </html>
+
 
 
 
