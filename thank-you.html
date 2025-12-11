@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | SpreadsheetPortal</title>
+    <meta name="description" content="Thank you for contacting SpreadsheetPortal. We'll get back to you shortly.">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📈</text></svg>">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+            min-height: 100vh;
+        }
+        .logo-text {
+            font-family: 'Playfair Display', serif;
+        }
+        .success-animation {
+            animation: successScale 0.5s ease-out;
+        }
+        @keyframes successScale {
+            0% { transform: scale(0); opacity: 0; }
+            70% { transform: scale(1.1); }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        .pulse-dot {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.2); opacity: 0.7; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation (Same as main site) -->
+    <nav class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <a href="index.html" class="flex items-center">
+                            <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center mr-3">
+                                <i class="fas fa-chart-line text-white text-lg"></i>
+                            </div>
+                            <span class="logo-text text-xl font-bold text-primary">SpreadsheetPortal</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html#services" class="text-neutral hover:text-primary font-medium transition duration-150">Services</a>
+                    <a href="index.html#solutions" class="text-neutral hover:text-primary font-medium transition duration-150">Solutions</a>
+                    <a href="index.html#case-studies" class="text-neutral hover:text-primary font-medium transition duration-150">Case Studies</a>
+                    <a href="index.html#contact" class="bg-primary text-white px-6 py-2 rounded-lg font-medium hover:bg-secondary transition duration-150">Contact Again</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+        <div class="text-center">
+            <!-- Success Icon -->
+            <div class="relative inline-block mb-8">
+                <div class="w-24 h-24 bg-green-100 rounded-full flex items-center justify-center success-animation">
+                    <i class="fas fa-check-circle text-green-500 text-5xl"></i>
+                </div>
+                <div class="absolute -top-2 -right-2">
+                    <div class="w-8 h-8 bg-green-400 rounded-full pulse-dot"></div>
+                </div>
+            </div>
+
+            <!-- Main Message -->
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 font-playfair">
+                Message Successfully Sent!
+            </h1>
+            
+            <div class="max-w-2xl mx-auto">
+                <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+                    Thank you for contacting <span class="text-primary font-semibold">SpreadsheetPortal</span>. 
+                    We've received your message and will get back to you within <span class="font-bold">2 business hours</span>.
+                </p>
+
+                <!-- Confirmation Details -->
+                <div class="bg-white rounded-2xl shadow-lg p-8 mb-10 text-left border border-gray-100">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6">What happens next?</h2>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center mr-4">
+                                <i class="fas fa-envelope-open-text text-primary text-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-lg text-gray-800 mb-1">1. Email Confirmation</h3>
+                                <p class="text-gray-600">You'll receive an email confirmation at the address you provided.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 w-10 h-10 bg-purple-50 rounded-lg flex items-center justify-center mr-4">
+                                <i class="fas fa-phone-alt text-primary text-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-lg text-gray-800 mb-1">2. Initial Consultation</h3>
+                                <p class="text-gray-600">We'll schedule a 30-minute discovery call to understand your needs in detail.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 w-10 h-10 bg-green-50 rounded-lg flex items-center justify-center mr-4">
+                                <i class="fas fa-file-alt text-primary text-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-lg text-gray-800 mb-1">3. Custom Proposal</h3>
+                                <p class="text-gray-600">We'll prepare a detailed proposal with timeline, deliverables, and pricing.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
+                    <a href="index.html" class="bg-primary text-white px-8 py-4 rounded-lg font-semibold hover:bg-secondary transition duration-150 flex items-center justify-center">
+                        <i class="fas fa-home mr-3"></i> Return to Homepage
+                    </a>
+                    <a href="index.html#case-studies" class="bg-white text-primary border-2 border-primary px-8 py-4 rounded-lg font-semibold hover:bg-primary hover:text-white transition duration-150 flex items-center justify-center">
+                        <i class="fas fa-chart-line mr-3"></i> View Case Studies
+                    </a>
+                </div>
+
+                <!-- Additional Help -->
+                <div class="bg-blue-50 rounded-2xl p-6 border border-blue-100">
+                    <div class="flex items-center justify-center mb-4">
+                        <i class="fas fa-clock text-blue-500 text-2xl mr-3"></i>
+                        <h3 class="text-lg font-semibold text-blue-800">Need Immediate Assistance?</h3>
+                    </div>
+                    <p class="text-blue-700 mb-4">
+                        For urgent inquiries, you can also reach us at:
+                    </p>
+                    <div class="space-y-2">
+                        <div class="flex items-center justify-center">
+                            <i class="fas fa-envelope text-blue-500 mr-3"></i>
+                            <a href="mailto:grandnum86@gmail.com" class="text-blue-700 hover:text-blue-900 font-medium">
+                                grandnum86@gmail.com
+                            </a>
+                        </div>
+                        <div class="text-blue-600 text-sm">
+                            <i class="fas fa-info-circle mr-2"></i>
+                            Typical response time: 30 minutes - 2 hours during business hours
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Auto Redirect Notice -->
+                <div class="mt-10 pt-8 border-t border-gray-200">
+                    <p class="text-gray-500 text-sm">
+                        You will be automatically redirected to the homepage in <span id="countdown" class="font-bold text-primary">10</span> seconds.
+                        <br>
+                        <a href="index.html" class="text-primary hover:text-secondary font-medium mt-2 inline-block">
+                            Click here if not redirected
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer (Simplified version) -->
+    <footer class="bg-gray-900 text-white py-12 mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <div class="flex items-center justify-center mb-6">
+                    <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center mr-3">
+                        <i class="fas fa-chart-line text-white text-lg"></i>
+                    </div>
+                    <span class="logo-text text-xl font-bold text-white">SpreadsheetPortal</span>
+                </div>
+                <p class="text-gray-400 max-w-2xl mx-auto mb-8">
+                    Transforming business data into competitive advantage through advanced Excel solutions and custom software.
+                </p>
+                <div class="flex justify-center space-x-4 mb-8">
+                    <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition duration-150">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary transition duration-150">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+                <p class="text-gray-500 text-sm">
+                    &copy; 2024 SpreadsheetPortal. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Countdown Timer
+        let seconds = 10;
+        const countdownElement = document.getElementById('countdown');
+        
+        const countdownTimer = setInterval(() => {
+            seconds--;
+            countdownElement.textContent = seconds;
+            
+            if (seconds <= 0) {
+                clearInterval(countdownTimer);
+                window.location.href = 'index.html';
+            }
+        }, 1000);
+
+        // Cancel redirect if user interacts
+        document.addEventListener('click', () => {
+            clearInterval(countdownTimer);
+            countdownElement.textContent = 'Redirect cancelled';
+        });
+
+        // Add Tailwind config for colors
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0F4C81',
+                        secondary: '#2E8B57',
+                        accent: '#FF6B35',
+                        dark: '#1a202c',
+                        light: '#f7fafc',
+                        neutral: '#4a5568'
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                        'playfair': ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>
